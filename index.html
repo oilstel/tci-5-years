@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCI's 5th Birthday</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="/" id="top-spiral" class="home"></a>
+
+        <nav id="modes">
+        <a href="/" class="current">Explore</a>
+        <a href="/people">People</a>
+        <a href="/subscribe" id="subscribe-button"></a>
+        </nav>
+    </header>
+
+    <article>
+        <p>Dear reader,</p>
+
+        <p>It’s Real <img src="images/real-snail.png" alt="Snail" id="real-snail" > here. Did you know that The Creative Independent is 5 years old? That means we’ve made 5 trips around the sun.</p>
+
+        <p>We thought this would be a good time to look back on the journey so far. So far we’ve talked with over 1185 creative people, and that number will be higher tomorrow.</p>
+
+        <p>
+            <img src="images/stars-1.png" id="stars-one">
+            When TCI first launched we published a brief origin story of our logo and why it’s a spiral. The spiral is a metaphor for circling back, again and again, a process that artists tend to do frequently. When we launched, something we had in mind, too, was attempting to slow things down on the internet, offering a place that felt quieter and more intentional. One way to do this was through what we published; another way was our minimal design. We chose a snail as a mascot to represent this kind of movement, but also because like a snail trail, artists often leave some sort of residue in their wake. Making art is often a messy process and TCI exists to celebrate and nurture people along this journey.
+        </p>
+
+        <p>
+            <img src="images/stars-2.png" id="stars-two">
+            <img src="images/loops.png" id="loops">
+            We’ve published interviews, guides, wisdoms, zines, reports, and artwork, and have slowly grown into a vast resource that anyone can use for free. To celebrate the last 5 years we’ve compiled a few highlights into a Greatest Hits collection of TCI’s life so far. When we say “greatest hits,” we don’t mean the most popular. It’s more the pieces that we felt were (and are) the most useful or maybe point to a necessary tip or idea. The truth is, if we were to make this collection on another day, it might be different, because like the creative process, our minds are not static. Either way, we hope you’ll enjoy this compilation. We look forward to many more birthdays to come.
+        </p>
+
+        <br /><br />
+
+        <p>Some things from our past 5 years…</p>
+
+        <br /><br />
+        
+        <div id="some-things">
+            <nav id="years">
+                <button class="year-button">2016</button>
+                <button class="year-button">2017</button>
+                <button class="year-button">2018</button>
+                <button class="year-button">2019</button>
+                <button class="year-button">2020</button>
+                <button class="year-button active">2021</button>
+            </nav>
+
+            <div id="controls">
+                <button id="previous" onclick="slide('left')"></button>
+                <button id="next" onclick="slide('right')"></button>
+            </div>
+
+            <div id="items">
+                <div class="year-items" id="2016">
+                    <a style="color: #fff; background-color: #000;" href="/weekends/qiong-li-full-color-sketch/" class="box weekend">
+                        <div class="date">September 26, 2016</div>
+                        <div class="label">
+                            <span class="type" style="color: #000; background-color: #fff;">Weekend:</span><br>
+                            <span class="title">
+                                Full Color Sketch by Qiong Li
+                            </span>
+                        </div>
+                    </a>
+                    <a href="/people/philip-glass-on-controlling-your-output-and-getting-paid-for-what-you-make/" class="box interview" data-themes="independence,beginnings" data-disciplines="music,culture" style="color: #FBDBEB; background-color: #315E47; border: 1px solid #315E47;">
+                        <div class="date">October 3, 2016</div>
+                        <div class="label">
+                          <span class="title">Philip Glass on controlling your output and getting paid for what you make</span>
+                        </div>
+                      </a>
+                    <a href="/people/anohni-on-art-corporations-and-the-music-industry/" class="box interview" data-themes="adversity,anxiety,inspiration,politics" data-disciplines="music,art,culture" style="color: #f2f0ea; background-color: #560c68; border: 1px solid #560c68;">
+                        <div class="date">October 10, 2016</div>
+                        <div class="label">
+                          <span class="title">Anohni on art, corporations, and the music industry</span>
+                        </div>
+                    </a>
+                    <a style="color: #fff; background-color: #000;" href="/weekends/lifes-a-beach-and-then-you-dive-by-jaakko-pallasvuo/" class="box weekend">
+                        <div class="date">December 30, 2016</div>
+                        <div class="label">
+                            <span class="type" style="color: #000; background-color: #fff;">Weekend:</span><br>
+                            <span class="title">
+                                Life’s A Beach And Then You Dive by Jaakko Pallasvuo
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="year-items" id="2017">
+                    <a href="/people/roni-horn-on-politics-in-art/" class="box interview" data-themes="inspiration,independence,politics" data-disciplines="art" style="color: #494949; background-color: #f8b494; border: 1px solid #f8b494;">
+                        <div class="date">February 14, 2017</div>
+                        <div class="label">
+                          <span class="title">Roni Horn on politics in art</span>
+                        </div>
+                    </a>
+                    <a href="/people/natalie-diaz-on-the-physicality-of-writing/" class="box interview" data-themes="process,inspiration" data-disciplines="poetry" style="color: #fff; background-color: #F18700; border: 1px solid #F18700;">
+                        <div class="date">March 14, 2017</div>
+                        <div class="label">
+                          <span class="title">Natalie Diaz on the physicality of writing</span>
+                        </div>
+                    </a>
+                    <a href="/people/ocean-vuong-on-being-generous-in-your-work/" class="box interview" data-themes="process,inspiration,independence,anxiety" data-disciplines="writing" style="color: #F2F0EA; background-color: #548AEA; border: 1px solid #548AEA;">
+                        <div class="date">May 16, 2017</div>
+                        <div class="label">
+                          <span class="title">Ocean Vuong on being generous in your work</span>
+                        </div>
+                    </a>
+                    <a href="/people/qiong-li-on-being-a-human-camera/" class="box interview" data-themes="inspiration,identity,independence,process,collaboration" data-disciplines="art,design" style="color: #ef00bf; background-color: #F4F4F4; border: 1px solid #F4F4F4;">
+                        <div class="date">April 27, 2017</div>
+                        <div class="label">
+                          <span class="title">Multimedia designer and artist Qiong Li on the value of being alone</span>
+                        </div>
+                    </a>
+                    <a href="/essays/hope-hall-on-mindset/" class="box essay">
+                        <div class="date">July 18, 2017</div>
+                        <div class="label">
+                          <span class="type">Essay:</span><br>
+                          <span class="title">Mindset by Hope Hall</span>
+                        </div>
+                    </a>
+                    <a href="/people/durga-chew-bose-on-the-power-of-uncertainty/" class="box interview" data-themes="process,inspiration,education,identity" data-disciplines="writing" style="color: #F3ECE2; background-color: #94877E; border: 1px solid #94877E;">
+                        <div class="date">September 29, 2017</div>
+                        <div class="label">
+                          <span class="title">Durga Chew-Bose on the power of uncertainty</span>
+                        </div>
+                    </a>
+                    <a href="/people/bjork-on-creativity-as-an-ongoing-experiment/" class="box interview" data-themes="collaboration,inspiration,process,beginnings,success" data-disciplines="music,art" style="color: #071BC9; background-color: #F6FC90; border: 1px solid #F6FC90;">
+                        <div class="date">December 14, 2017</div>
+                        <div class="label">
+                          <span class="title">Björk on creativity as an ongoing experiment</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="year-items" id="2018">
+                    <a href="/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/" class="box essay">
+                        <div class="date">May 21, 2018</div>
+                        <div class="label">
+                          <span class="type">Essay:</span><br>
+                          <span class="title">My website is a shifting house next to a river of knowledge. What could yours be?</span>
+                        </div>
+                    </a>
+                    <a href="/people/saidiya-hartman-on-working-with-archives/" class="box interview" data-themes="focus,process,adversity,politics,education" data-disciplines="writing" style="color: #315A45; background-color: #b5d536; border: 1px solid #b5d536;">
+                        <div class="date">April 18, 2018</div>
+                        <div class="label">
+                          <span class="title">Saidiya Hartman on working with archives</span>
+                        </div>
+                    </a>
+                    <a href="/people/writer-ashley-c-ford-on-being-honest-about-what-you-have-the-time-to-do/" class="box interview" data-themes="time-management,process,creative-anxiety,failure" data-disciplines="writing" style="color: #EA4062; background-color: #F2F0EA; border: 1px solid #F2F0EA;">
+                        <div class="date">June 22, 2021</div>
+                        <div class="label">
+                          <span class="title">Writer Ashley C. Ford on being honest about what you have the time to do</span>
+                        </div>
+                    </a>
+                    <a href="/people/2018-02-07-eve-ewing-on-challenging-your-own-ideas-of-failure/" class="box interview" data-themes="inspiration,process,multi-tasking,success,anxiety,failure" data-disciplines="writing" style="color: #f2f0ea; background-color: #560c68; border: 1px solid #560c68;">
+                        <div class="date">August 11, 2021</div>
+                        <div class="label">
+                          <span class="title">Eve Ewing on challenging your own ideas of failure</span>
+                        </div>
+                    </a>
+                    <a href="/guides/how-to-make-a-zine/" class="box guide" data-themes="" data-disciplines="">
+                        <div class="date">November 19, 2018</div>
+                        <div class="label">
+                          <span class="type">Guide:</span><br>
+                          <span class="title">How to make a zine</span>
+                          <span class="author">(A guide by Rona Akbari)</span>
+                        </div>
+                    </a>
+                    <a href="/guides/how-to-balance-full-time-work-with-creative-projects/" class="box guide" data-themes="" data-disciplines="">
+                        <div class="date">November 27, 2018</div>
+                        <div class="label">
+                          <span class="type">Guide:</span><br>
+                          <span class="title">How to balance full-time work with creative projects</span>
+                          <span class="author">(A guide by Jeffrey Silverstein)</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="year-items" id="2019">
+                    <a href="/essays/i-am-not-the-next-big-thing/" class="box essay">
+                        <div class="date">January 31, 2019</div>
+                        <div class="label">
+                          <span class="type">Essay:</span><br>
+                          <span class="title">I am not the next big thing: on creativity and aging</span>
+                        </div>
+                    </a>
+                    <a href="/people/adrienne-maree-brown-on-vulnerability-playfulness-and-keeping-yourself-honest/" class="box interview" data-themes="inspiration,process,identity,creative-anxiety,mental-health,politics" data-disciplines="writing" style="color: #000; background-color: #EDDA46; border: 1px solid #EDDA46;">
+                        <div class="date">July 11, 2019</div>
+                        <div class="label">
+                          <span class="title">adrienne maree brown on vulnerability, playfulness, and keeping yourself honest</span>
+                        </div>
+                    </a>
+                    <a href="/guides/how-to-begin-designing-for-diversity/" class="box guide">
+                        <div class="date">September 18, 2019</div>
+                        <div class="label">
+                          <span class="type">Guide:</span><br>
+                          <span class="title">How to begin designing for diversity</span>
+                          <span class="author">(A guide by Project Inkblot)</span>
+                        </div>
+                    </a>
+                    <a href="/library/on-feeling-healthy/" class="box book">
+                        <div class="date">September 18, 2019</div>
+                        <div class="label">
+                          <span class="type">PDF:</span><br>
+                          <span class="title">On feeling healthy<br><br> The Creative Independent</span>
+                        </div>
+                      </a>
+                </div>
+                <div class="year-items" id="2020">
+                    <a href="/essays/a-soft-manifesto/" class="box essay">
+                        <div class="date">December 23, 2020</div>
+                        <div class="label">
+                          <span class="type">Essay:</span><br>
+                          <span class="title">A Soft Manifesto</span>
+                        </div>
+                    </a>
+                    <a href="/guides/how-to-write-a-poem/" class="box guide" data-themes="" data-disciplines="poetry">
+                        <div class="date">February 26, 2020</div>
+                        <div class="label">
+                          <span class="type">Guide:</span><br>
+                          <span class="title">How to write a poem</span>
+                          <span class="author">(A guide by T. Cole Rachel)</span>
+                        </div>
+                    </a>
+                    <a href="/people/matt-berninger-and-phoebe-bridgers-on-how-they-write-what-they-write/" class="box interview" data-themes="process,inspiration,collaboration,success,anxiety" data-disciplines="music,writing" style="color: #eff2ff; background-color: #29386F; border: 1px solid #29386F;">
+                        <div class="date">July 28, 2020</div>
+                        <div class="label">
+                          <span class="title">Matt Berninger and Phoebe Bridgers on how they write what they write</span>
+                          
+                          
+                        </div>
+                    </a>
+                    <a href="/people/illustrator-and-art-director-na-kim-on-good-design-avoiding-trends-and-staying-creatively-engaged/" class="box interview" data-themes="inspiration,process,income,beginnings,collaboration,anxiety,day-jobs" data-disciplines="design" style="color: #F0F3E5; background-color: #31668A; border: 1px solid #31668A;">
+                        <div class="date">January 29, 2021</div>
+                        <div class="label">
+                          <span class="title">Illustrator and art director Na Kim on good design, avoiding trends, and staying creatively engaged</span>
+                          
+                          
+                        </div>
+                    </a>
+                </div>
+                <div class="year-items" id="2021" style="display: flex;">
+                    <a href="/people/poet-and-professor-ross-gay-on-abandoning-capitalistic-achievement-to-seek-the-freedom-of-play/" class="box interview" data-themes="inspiration,collaboration,mental-health,mentorship,money,politics" data-disciplines="poetry,education,writing" style="color: #F2F0EA; background-color: #5D8D42; border: 1px solid #5D8D42;">
+                        <div class="date">August 17, 2021</div>
+                        <div class="label">
+                          <span class="title">Poet and professor Ross Gay on abandoning capitalistic achievement to seek the freedom of play</span>
+                        </div>
+                    </a>
+                    <a href="/library/sober-21/" class="box book">
+                        <div class="date">May 18, 2021</div>
+                        <div class="label">
+                          <span class="type">PDF:</span><br>
+                          <span class="title">Sober 21<br><br> The Creative Independent</span>
+                        </div>
+                    </a>
+                    <a href="/people/writer-maggie-nelson-on-working-with-and-against-constraints/" class="box interview" data-themes="process" data-disciplines="writing" style="color: #F2F0EA; background-color: #AA7423; border: 1px solid #AA7423;">
+                        <div class="date">September 15, 2021</div>
+                        <div class="label">
+                          <span class="title">Writer Maggie Nelson on working with and against constraints</span>
+                          
+                          
+                        </div>
+                    </a>
+                    <a href="/people/authors-and-podcasters-aminatou-sow-and-ann-friedman-on-how-friends-can-do-business-together/" class="box interview" data-themes="collaboration,mental-health,time-management,money" data-disciplines="writing,podcasts" style="color: #000; background-color: #EDDA46; border: 1px solid #EDDA46;">
+                        <div class="date">August 4, 2021</div>
+                        <div class="label">
+                          <span class="title">Authors and podcasters Aminatou Sow and Ann Friedman on how friends can do business together</span>
+                          
+                          
+                        </div>
+                    </a>
+                    <a href="/people/writer-ashley-c-ford-on-being-honest-about-what-you-have-the-time-to-do/" class="box interview" data-themes="time-management,process,creative-anxiety,failure" data-disciplines="writing" style="color: #EA4062; background-color: #F2F0EA; border: 1px solid #F2F0EA;">
+                        <div class="date">June 22, 2021</div>
+                        <div class="label">
+                          <span class="title">Writer Ashley C. Ford on being honest about what you have the time to do</span>
+                          
+                          
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <img src="images/bird-1.png" id="bird-one">
+            In the spirit of circling back we created this time capsule that displays artifacts from TCI’s not-so-distant past…
+        </p>
+
+        <p>
+            <img src="images/bird-2.png" id="bird-two">
+        </p>
+
+        <div id="time-capsule">
+            <h2>TCI Time Capsule</h2>
+
+            <div id="time-capsule-inner">
+                <span id="on-this-day">On this day 2 years ago we published:</span><br />
+                <a href="" id="time-capsule-piece"></a>
+            </div>
+        </div>
+
+        <p>We thought this might be a good moment to bring you some of our readers’ voices. After all, they (you) make TCI worth celebrating! Here are a few birthday messages that we received on TCI’s voicemail. No need to dial our voicemail; you can play them below.</p>
+
+        <div id="voicemails">
+            <div class="voicemail" style="left: 10%;" onclick="playVoicemail(this)">
+                <div class="marker filled"></div>
+                <div class="name-city">
+                    Anonymous Snail<br />
+                    Jacksonville, FL
+                </div>
+                <div class="date-length">
+                    9/21/21<br />
+                    0:21
+                </div>
+                <audio controls src="audio/voicemail-4.mp3" ontimeupdate="progressBar(this)"></audio>
+            </div>
+            <div class="voicemail right" style="right: 10%;" onclick="playVoicemail(this)">
+                <div class="marker filled"></div>
+                <div class="name-city">
+                    Anonymous Snail<br />
+                    New York, NY
+                </div>
+                <div class="date-length">
+                    9/22/21<br />
+                    0:02
+                </div>
+                <audio controls src="audio/voicemail-2.mp3" ontimeupdate="progressBar(this)"></audio>
+            </div>
+            <div class="voicemail" style="left: 25%;" onclick="playVoicemail(this)">
+                <div class="marker filled"></div>
+                <div class="name-city">
+                    Anonymous Snail<br />
+                    Bay Area, CA
+                </div>
+                <div class="date-length">
+                    9/21/21<br />
+                    1:05
+                </div>
+                <audio controls src="audio/voicemail-3.mp3" ontimeupdate="progressBar(this)"></audio>
+            </div>
+            <div class="voicemail right" style="right: 20%;" onclick="playVoicemail(this)">
+                <div class="marker filled"></div>
+                <div class="name-city">
+                    Anonymous Snail<br />
+                    Denver, CO
+                </div>
+                <div class="date-length">
+                    9/23/21<br />
+                    1:50
+                </div>
+                <audio controls src="audio/voicemail-1.mp3" ontimeupdate="progressBar(this)"></audio>
+            </div>
+            <div class="text-message" style="left: 24%;">
+                <div class="marker filled"></div>
+                <div class="header">
+                    <div class="name-city">
+                        Anonymous Snail<br />
+                        Mumbai, India
+                    </div>
+                    
+                    <div class="date-length">
+                        9/22/21<br />
+                        216 words
+                    </div>
+                </div>
+                <div class="message">
+                    Happy Birthday to team creative independent! 
+                    I hope you guys are all safe and doing well!
+                    I have been following your page for about a year and I really look forward to your posts. 
+                    The past year and a half has been really difficult, but reading and learning from and about other creatives through your page has been incredibly comforting and reassuring. 
+                    I especially love theatre artist, <a href="/people/artist-and-theater-maker-kaneza-schaal-on-creating-your-own-notion-of-what-theater-can-be/">Kaneza Schaal’s post</a> dated 04.05.2021 and author and illustrator, <a href="https://thecreativeindependent.com/people/author-and-illustrator-jonny-sun-on-writing-as-an-act-of-discovery/">Johnny Sun’s post</a> dated 23.06.2021. 
+                    I have them written and highlighted in my notebook and use them to help me clear my head during my spells of severe anxiety and panic. 
+                    Thank you so much for all your work!
+                    It really means a lot! 
+                    And good luck for your future! 
+                </div>
+            </div>
+            <div class="voicemail right" style="right: 20%;" onclick="playVoicemail(this)">
+                <div class="marker filled"></div>
+                <div class="name-city">
+                    Anonymous Snail<br />
+                    New Hampshire
+                </div>
+                <div class="date-length">
+                    9/20/21<br />
+                    0:30
+                </div>
+                <audio controls src="audio/voicemail-5.mp3" ontimeupdate="progressBar(this)"></audio>
+            </div>
+            <div class="voicemail" style="left: 10%;" onclick="playVoicemail(this)">
+                <div class="marker filled"></div>
+                <div class="name-city">
+                    Anonymous Snail<br />
+                    Glasgow
+                </div>
+                <div class="date-length">
+                    9/20/21<br />
+                    0:23
+                </div>
+                <audio controls src="audio/voicemail-6.mp3" ontimeupdate="progressBar(this)"></audio>
+            </div>
+            <div class="text-message" style="left: 23%;">
+                <div class="marker filled"></div>
+                <div class="header">
+                    <div class="name-city">
+                        Anonymous Snail<br />
+                        Indianapolis
+                    </div>
+                    
+                    <div class="date-length">
+                        9/23/21<br />
+                        81 words
+                    </div>
+                </div>
+                <div class="message">
+                    Happy Birthday!! Birthday twins! September 26 🤙  This bday, my family is coming to town to visit… so in preparation i’ve been doubling up on my therapy ~ *actually* therapy… and all the creative iterations i’ve cultivated as practices in between 🌀 TCI has been such an important resource for me over the years… too many important convos, essays, advice, etc that have shaken me up inside to count. Thank you so much for this community and happy HAPPY birthday! 💛
+                </div>
+            </div>
+            <div class="text-message right" style="right: 13%;">
+                <div class="marker filled"></div>
+                <div class="header">
+                    <div class="name-city">
+                        Anonymous Snail<br />
+                        Earth
+                    </div>
+                    
+                    <div class="date-length">
+                        9/23/21<br />
+                        18 words
+                    </div>
+                </div>
+                <div class="message">
+                    Hello! This is the <a href="/people/writer-casey-gerald-on-being-available-for-the-work-you-were-meant-to-do">first TCI interview</a> that I've read all the way through and I loved it!
+                </div>
+            </div>
+            <div class="text-message" style="left: 24%;">
+                <div class="marker filled"></div>
+                <div class="header">
+                    <div class="name-city">
+                        Anonymous Snail<br />
+                        New York
+                    </div>
+                    
+                    <div class="date-length">
+                        9/21/21<br />
+                        187 words
+                    </div>
+                </div>
+                <div class="message">
+                    <p>happy happy birthday!!!!</p>
+                    
+                    <p>these past few years, celebrating my birthday has been very calm. just spending time with loved ones and eating good food. I feel very blessed to be surrounded by so much love on my birthday.</p>
+
+                    <p>I take a little bit from every interview tbh! But I really liked <a href="https://thecreativeindependent.com/people/jenny-zhang-on-writing-the-secret-language-in-your-head/">Jenny Zhang's interview</a>. I love her perspective on embarrassment and how it's so normal to feel that way. It SHOULD be normalized and accepted as a feeling that comes up when you're doing something new. I also loved when she said "It's very American to not want to address the body." It really is! Especially in terms of periods and even pooping! We could really be using human excretion as fertilizer but this stigma against it limits us from creating better soil. It's pretty wild. So yeah that interview really resonated with me. Even bought one of her books after reading it.</p>
+
+                    <p>Thank you for doing this work! I look forward to reading the daily interview and I love sharing with anyone I know. I wish you many many many years of success. Keep being you!!</p>
+                </div>
+            </div>
+            <div class="text-message right" style="right: 20%;">
+                <div class="marker filled"></div>
+                <div class="header">
+                    <div class="name-city">
+                        Anonymous Snail<br />
+                        Brooklyn
+                    </div>
+                    
+                    <div class="date-length">
+                        9/21/21<br />
+                        31 words
+                    </div>
+                </div>
+                <div class="message">
+                    Happy birthday Real Snail! It’s an honor to watch you grow. Our creative community is so lucky to have you. To many more years of learning together. All love, Mikki (Bklyn)
+                </div>
+            </div>
+            <div class="text-message right" style="right: 43%;">
+                <div class="marker filled"></div>
+                <div class="header">
+                    <div class="name-city">
+                        Anonymous Snail<br />
+                        Ontario, Canada
+                    </div>
+                    
+                    <div class="date-length">
+                        9/20/21<br />
+                        17 words
+                    </div>
+                </div>
+                <div class="message">
+                    Happy 5th Birthday TCI! I enjoy reading a new interview each morning. Very inspiring and helpful &lt;3
+                </div>
+            </div>
+            <div class="text-message" style="left: 23%;">
+                <div class="marker filled"></div>
+                <div class="header">
+                    <div class="name-city">
+                        Anonymous Snail<br />
+                        New Zealand
+                    </div>
+                    
+                    <div class="date-length">
+                        9/18/21<br />
+                        77 words
+                    </div>
+                </div>
+                <div class="message">
+                    <p>Happy birthday TCI! </p>
+
+                    <p>I hope you're celebrating your birthday with a big dinner with loved ones, candles, and good food.</p>
+
+                    <p>I always think about the interview with <a href="https://thecreativeindependent.com/people/sarah-nicole-prickett-on-taking-the-long-road/">Sarah Nicole Prickett</a>, particularly when she said: “Generally I’m attracted to glamour, because I had a totally unglamorous childhood, which I deeply resent.” I feel the same way.</p>
+
+                    <p>Many of <a href="https://thecreativeindependent.com/people/thora-siemsen/">Thora Siemsen’s interviews</a> have really affected me and my practice.</p>
+
+                    <p>All the best for the next five years and beyond!</p>
+                </div>
+            </div>
+            <div class="voicemail right" style="right: 25%;" onclick="playVoicemail(this)">
+                <div class="marker filled"></div>
+                <div class="name-city">
+                    Anonymous Snail<br />
+                    Minneapolis, MN
+                </div>
+                <div class="date-length">
+                    9/17/21<br />
+                    0:24
+                </div>
+                <audio controls src="audio/voicemail-7.mp3" ontimeupdate="progressBar(this)"></audio>
+            </div>
+            <div class="text-message right" style="right: 23%;">
+                <div class="marker filled"></div>
+                <div class="header">
+                    <div class="name-city">
+                        Anonymous Snail<br />
+                        New York
+                    </div>
+                    
+                    <div class="date-length">
+                        9/17/21<br />
+                        6 words
+                    </div>
+                </div>
+                <div class="message">
+                    Happy hatch day, 🐌. Stay slow!
+                </div>
+            </div>
+            <div class="voicemail" style="left: 35%;" onclick="playVoicemail(this)">
+                <div class="marker filled"></div>
+                <div class="name-city">
+                    Anonymous Snail<br />
+                    West Virginia
+                </div>
+                <div class="date-length">
+                    9/15/21<br />
+                    2:59
+                </div>
+                <audio controls src="audio/voicemail-9.mp3" ontimeupdate="progressBar(this)"></audio>
+            </div>
+            <div class="voicemail" style="left: 15%;" onclick="playVoicemail(this)">
+                <div class="marker filled"></div>
+                <div class="name-city">
+                    Anonymous Snail<br />
+                    West Virginia
+                </div>
+                <div class="date-length">
+                    9/15/21<br />
+                    1:30
+                </div>
+                <audio controls src="audio/voicemail-8.mp3" ontimeupdate="progressBar(this)"></audio>
+            </div>
+        </div>
+
+        <p>We’d also like to share our birthday gifts with you. Our friends and collaborators made us these playlists, and we hope you’ll give them a listen.</p>
+
+        <div id="playlists">
+            <a href="https://open.spotify.com/playlist/20nPzhh00ObsINgPr0BwTU" target="_blank" class="playlist" id="frog">
+                <div class="playlist-title">tomberlin &lt;3 tci</div>
+                <div class="playlist-byline">Curated by tomberlin</div>
+            </a>
+            <a href="https://open.spotify.com/playlist/6W1GgvNTx9p9kyMT2COz4Y" target="_blank" class="playlist" id="snail-hangout">
+                <div class="playlist-title">Rainbow in the Dark: I See Good Spirits, I See Bad Spirits</div>
+                <div class="playlist-byline">Curated by rainbow in the dark</div>
+            </a>
+            <a href="https://open.spotify.com/playlist/1iw3J2Wc9PQmNHaL3h5Iov?si=257c01a9b451456e" target="_blank" class="playlist" id="spider">
+                <div class="playlist-title">Happy birthday tci!</div>
+                <div class="playlist-byline">Curated by Dorothy Lasky</div>
+            </a>
+            <a href="https://open.spotify.com/playlist/4Y5Olhl2NqbsSRlhg5YXvy?si=7718446a305947bb" target="_blank" class="playlist" id="squirls">
+                <div class="playlist-title">playlist for tci</div>
+                <div class="playlist-byline">Curated by Camae Dennis (Moor Mother)</div>
+            </a>
+            <a href="https://open.spotify.com/playlist/6Psd4neODe87T9V6Iu6vxX?si=c395accba7aa48df" target="_blank"  class="playlist" id="turtle">
+                <div class="playlist-title">MAGIC AND ECSTASY</div>
+                <div class="playlist-byline">Curated by Drew Daniel</div>
+            </a>
+            <a href="https://open.spotify.com/playlist/4r7pauv2f4MU1wgRBCZgUU?si=2d08bbd9e6a044c0" target="_blank" class="playlist" id="snail-friends">
+                <div class="playlist-title">music from the silver couch</div>
+                <div class="playlist-byline">Curated by Real Snail</div>
+            </a>
+        </div>
+
+        <p>...and if you are feeling extra ambitious here are a few ways you could celebrate TCI’s birthday IRL:</p>
+
+        <p id="irl-todo">
+            <img src="images/music-notes.png" id="music-notes">
+            <i>Go to the park</i><br />
+            <i>Read a poem</i><br />
+            <i>Visit a museum near you</i><br />
+            <i>Look for a snail</i><br />
+            <i>Admire the clouds</i>
+        </p>
+
+        <div id="thank-you">
+            <span id="text">Thanks for<br />five years!</span>
+        </div>
+
+        <p>P.S. If you’re new to this site, The Creative Independent (TCI) is a growing resource of emotional and practical guidance for creative people, published ad-free by Kickstarter, a public-benefit corporation.</p>
+
+        <p>You can subscribe to our <a href="/subscribe">newsletter</a>, follow us on <a href="https://www.instagram.com/thecreativeindependent/">Instagram</a>, or learn more <a href="/about">about us</a>.</p>
+
+        <p>
+            Feeling everything at once,<br />
+            Real Snail
+        </p>
+
+    </article>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

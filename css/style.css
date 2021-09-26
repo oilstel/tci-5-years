@@ -1,0 +1,454 @@
+*, *:before, *:after { box-sizing: border-box; }
+
+html {
+    overflow-x: hidden;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-text-size-adjust: none; */
+    font-size: 26px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 0;
+    overflow-x: hidden;
+}
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* Header */
+header {
+    font-family: Courier, monospace;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#top-spiral {
+    display: block;
+    width: 111px;
+    height: 101px;
+    background: url("../images/logo-spiral.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+nav#modes {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    flex-flow: row wrap;
+}
+nav#modes a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    margin-right: 20px;
+}
+nav#modes a:last-child {
+    margin-right: 0;
+}
+nav#modes a#subscribe-button {
+    display: block;
+    width: 27px;
+    height: 17px;
+    background: url("../images/email-icon.svg") no-repeat;
+        background-size: auto;
+    background-size: 100% 100%;
+}
+nav#modes a#subscribe-button:hover {
+    width: 27px;
+    height: 28px;
+    background: url("../images/email-open-icon.svg") no-repeat;
+        background-size: auto;
+    background-size: 100% 100%;
+    border: 0;
+    margin-top: -11px;
+}
+
+/* Article */
+article {
+    margin-top: 100px;
+}
+p, #thank-you {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-text-size-adjust: none;
+}
+p {
+    max-width: 800px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+}
+p a {
+    color: #0000EE;
+}
+
+/* Inline illustrations */
+#real-snail {
+    height: 1em;
+    margin-bottom: -4px;
+}
+#stars-one {
+    float: right;
+    width: 200px;
+    margin-right: -150px;
+}
+#stars-two {
+    float: left;
+    width: 200px;
+    margin-left: -250px;
+}
+#loops {
+    float: right;
+    width: 200px;
+    margin-right: -150px;
+}
+#bird-one {
+    float: left;
+    width: 150px;
+    margin-left: -150px;
+}
+#bird-two {
+    width: 250px;
+    margin-left: 60%;
+    right: 0;
+}
+#music-notes {
+    float: right;
+    width: 200px;
+    margin-top: -40px;
+}
+
+/* Some things */
+#some-things {
+    max-width: 933px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+#some-things nav {
+    margin-bottom: 30px;
+}
+#some-things button.year-button {
+    font-family: Courier, 'Courier New', monospace;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 20px;
+}
+#some-things button.year-button:hover {
+    text-decoration: underline;
+}
+#some-things button.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+#some-things #items {
+    overflow-x: auto;
+    -webkit-mask-image: linear-gradient(to right, #eee 90%, transparent 100%);
+    mask-image: linear-gradient(to right, #eee 90%, transparent 100%);
+    padding-bottom: 10px;
+}
+#some-things #controls {
+    display: flex;
+    width: max-content;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+#some-things button#previous, #some-things button#next {
+    color: #000;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #bbb;
+    background-position: center center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+#some-things button#previous:hover, #some-things button#next:hover {
+    background-color: #dbdbdb;
+}
+#some-things button#previous {
+    background-image: url("../images/arrow-left.svg");
+    margin-right: 6px;
+}
+#some-things button#next {
+    background-image: url("../images/arrow-right.svg");
+}
+/* #some-things #items::after {
+    display: inline-flex;
+    content: '';
+    width: 30px;
+    flex-shrink: 0;
+} */
+#some-things #items {
+    display: flex;
+}
+#some-things #items > * {
+    display: none;
+}
+#some-things .box {
+    position: relative;
+    font-family: Courier, 'Courier New', monospace;
+    font-size: 16px;
+    width: 270px;
+    height: 270px;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    line-height: 1.3em;
+    flex-shrink: 0;
+}
+#some-things .box .date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.type {
+    padding: 2px 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+a.essay, a.book, a.weekend {
+    color: #fff;
+    background-color: #000;
+}
+a.book .type, a.weekend .type, a.approach .type, a.essay .type {
+    color: #000;
+    background-color: #fff;
+}
+a.guide .type {
+    color: #F8F8EA;
+    background-color: #000;
+}
+a.guide {
+    color: #000;
+    background-color: #F8F8EA;
+    border: 1px dotted #000;
+}
+
+/* Time Capsule */
+#time-capsule {
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 300px;
+    max-width: 933px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+#time-capsule a {
+    color: #000;
+}
+#time-capsule h2 {
+    font-weight: normal;
+    font-size: 26px;
+    font-style: italic;
+    margin: 0 auto;
+    width: max-content;
+    margin-top: -18px;
+    background-color: #fff;
+    padding: 0 10px;
+}
+#time-capsule-inner {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 20px;
+}
+span#on-this-day {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Voicemails */
+#voicemails {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 100px;
+}
+#voicemails a {
+    color: #000;
+}
+#voicemails .voicemail, #voicemails .text-message {
+    font-family: Courier, 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.3em;
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px dotted #000;
+    /* position: absolute; */
+    position: relative;
+    margin-bottom: 20px;
+}
+#voicemails .voicemail {
+    display: flex;
+    flex-flow: row nowrap;
+    cursor: pointer;
+}
+#voicemails .right {
+    align-self: flex-end;
+}
+#voicemails .voicemail audio {
+    display: none;
+}
+#voicemails .text-message .header {
+    display: flex;
+    margin-bottom: 20px;
+}
+#voicemails .text-message .message {
+    max-height: 150px;
+    padding-bottom: 10px;
+    overflow: auto;
+    -webkit-mask-image: linear-gradient(to bottom, #eee 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #eee 80%, transparent 100%);
+}
+#voicemails .text-message .message p {
+    margin-bottom: 1em;
+}
+#voicemails .voicemail:hover {
+    border-style: solid;
+}
+#voicemails .voicemail .marker {
+    width: 0; 
+    height: 0; 
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 9px solid #000;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+#voicemails .voicemail .date-length, #voicemails .text-message .date-length {
+    margin-left: auto;
+}
+
+/* Playlists */
+#playlists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: Courier, 'Courier New', monospace;
+    font-size: 14px;
+    margin: 0 auto;
+    max-width: 960px;
+    margin-bottom: 100px;
+}
+#playlists a.playlist {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    margin: 10px;
+}
+#playlists .playlist-byline {
+    margin-top: auto;
+}
+#playlists #frog {
+    background-image: url('../images/playlist-cover-frogs.png');
+}
+#playlists #snail-hangout {
+    background-image: url('../images/playlist-cover-snail-hangout.png');
+}
+#playlists #spider {
+    background-image: url('../images/playlist-cover-spider.png');
+}
+#playlists #squirls {
+    background-image: url('../images/playlist-cover-squirls.png');
+}
+#playlists #turtle {
+    background-image: url('../images/playlist-cover-turtle.png');
+}
+#playlists #snail-friends {
+    background-image: url('../images/playlist-cover-snail-friends.png');
+}
+
+/* IRL todo */
+
+#irl-todo {
+    margin-bottom: 100px;
+}
+
+/* Thank you */
+
+#thank-you {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 960px;
+    text-align: center;
+    height: 63vw;
+    background-image: url('../images/snails-in-grass.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+#thank-you #text {
+    transform: rotate(5deg);
+    font-style: italic;
+    font-size: 2vw;
+    margin-top: 90px;
+}
+
+
+/* Mobile */
+@media(max-width: 535px) {
+    body {
+        font-size: 20px;
+    }
+    p {
+        margin-bottom: ;
+    }
+    article {
+        margin-top: 50px;
+    }
+    #stars-one {
+        width: 150px;
+        margin-right: -10px;
+    }
+    #loops {
+        width: 150px;
+        margin-right: -40px;
+    }
+    #bird-two {
+        margin-left: 100px;
+        width: 150px;
+    }
+    #voicemails .voicemail, #voicemails .text-message {
+        left: 0 !important;
+        right: 0 !important;
+    }
+    #thank-you #text {
+        font-size: 20px;
+        margin-top: 20px;
+        background-color: yellow;
+    }
+}

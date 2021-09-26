@@ -14,7 +14,7 @@ let current_year = d.getFullYear();
 
 console.log(current_date + current_year);
 
-fetch('../data/interviews.json')
+fetch('/data/interviews.json')
 .then(response => response.json())
 .then(data => {
     console.log(data);

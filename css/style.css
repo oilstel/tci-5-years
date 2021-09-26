@@ -79,7 +79,7 @@ nav#modes a#subscribe-button:hover {
 article {
     margin-top: 100px;
 }
-p, #thank-you {
+p, #time-capsule, #thank-you {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
     -webkit-text-size-adjust: none;
